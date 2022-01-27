@@ -2,6 +2,8 @@ defmodule MeuModulo do
   import IO, only: [puts: 1]
   import Kernel, except: [inspect: 1]
 
+  alias MeuModulo.Math, as: MyMath
+
   def ola_mundo() do
     puts("Olá Mundo!")
     inspect(MyMath.soma(2, 4))
