@@ -3,11 +3,6 @@ defmodule MeuModulo.Enum do
     unless length(lista) == 0 do
       hd(lista)
     end
-
-    # if length(lista) == 0 do
-    #   nil
-    # else
-    #   hd(lista)
   end
 
   def primeiro_if(lista) do
@@ -17,4 +12,7 @@ defmodule MeuModulo.Enum do
       hd(lista)
     end
   end
+
+  def primeiro([]), do: nil
+  def primeiro(lista), do: hd(lista)
 end
