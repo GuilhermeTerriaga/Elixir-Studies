@@ -1,4 +1,6 @@
 defmodule MeuModulo.Concat do
+  # "\\" seta o valor padrão
+  # Usamos cabeçalho de função aqui,
   def join(string_a, string_b \\ nil, separador \\ " ")
   # quando o parametro pode ser nulavel, pode-se começar o nome deste com _
   def join(string_a, string_b, _separador) when is_nil(string_b) do
