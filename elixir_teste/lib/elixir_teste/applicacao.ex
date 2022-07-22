@@ -3,7 +3,8 @@ defmodule ElixirTeste.Applicacao do
 
   def start(_type, _args) do
     children = [
-      ElixirTeste.Agendador
+      ElixirTeste.Agendador,
+      ElixirTeste.ServidorAleatorio
     ]
 
     opts = [strategy: :one_for_one, name: ElixirTeste.Supervisor]
